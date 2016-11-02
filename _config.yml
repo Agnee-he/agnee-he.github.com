@@ -38,8 +38,8 @@ redcarpet:
     - with_toc_data
     
 
-title : Jekyll Jacman
-tagline: A fresh looking and responsive theme for Jekyll
+title : Agnee-he
+tagline: 处女座|完美主义|强迫症
 
 defaults:
   -
@@ -71,7 +71,7 @@ imglogo:
   src: img/logo.png        
 favicon: img/favicon.ico     ## 网站图标    
 apple_icon: img/jacman.jpg   ## 苹果设备上的图标，背景不要透明
-author_img: img/author.jpg   ## 网站底部的博主头像
+author_img: img/author.png   ## 网站底部的博主头像
 banner_img: img/banner.jpg   ## 博客顶部的图片
 
 close_aside: false      ##是否在文章页面自动关闭侧边栏
@@ -84,7 +84,7 @@ index:
 #### 作者信息
 author:
   name: ## 作者名
-  intro_line1:  "Hello ,I'm Larry Page in Google."    ## 网站底部的个人介绍
+  intro_line1:  "Hello ,I'm Agnee-he."    ## 网站底部的个人介绍
   intro_line2:  "This is my blog,believe it or not."  
   weibo_verifier:  ## 微博秀的验证码
   tsina:           ## 用于微博秀和微博分享
