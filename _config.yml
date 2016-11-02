@@ -111,8 +111,8 @@ links:
   Another Blog: https://agnee-he.github.io/agnee.github.com/
 
 #### 评论
-duoshuo_shortname: 
-disqus_shortname:  
+duoshuo_shortname: true
+disqus_shortname:  true
 
 #### 分享按钮
 jiathis:
