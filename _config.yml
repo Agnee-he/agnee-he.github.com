@@ -102,7 +102,7 @@ author:
 
 #### 目录
 toc:
-  article: true   ## 是否在文章中显示目录
+  article: false   ## 是否在文章中显示目录
   aside: true     ## 是否在侧边栏显示目录
 
 #### 友情链接
