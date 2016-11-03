@@ -78,7 +78,7 @@ close_aside: false      ##是否在文章页面自动关闭侧边栏
 
 #### 首页相关
 index:
-  expand: true              ## 首页文章是否展开。默认为展开式，显示 Read More。
+  expand: false              ## 首页文章是否展开。默认为展开式，显示 Read More。
   excerpt_link: Read More    
 
 #### 作者信息
