@@ -135,7 +135,7 @@ module.exports = mongoose.model('User',UserSchema);
 
 ## 日常数据库操作
 
-#### 插入
+### 插入
 ```
 var User = require("./user.js");
 
@@ -166,7 +166,7 @@ function insert() {
 insert();
 ```
 
-#### 更新
+### 更新
 ```
 var User = require("./user.js");
 
@@ -187,7 +187,7 @@ function update(){
 update();
 ```
 
-#### 删除
+### 删除
 ```
 var User = require("./user.js");
 
@@ -207,7 +207,7 @@ function del(){
 del();
 ```
 
-#### 条件查询
+### 条件查询
 ```
 var User = require("./user.js");
 
@@ -227,7 +227,7 @@ function getByConditions(){
 getByConditions();
 ```
 
-#### 模糊查询
+### 模糊查询
 ```
 var User = require("./user.js");
 
@@ -247,7 +247,7 @@ function getByRegex(){
 getByRegex();
 ```
 
-#### 分页查询
+### 分页查询
 ```
 var User = require("./user.js");
 
