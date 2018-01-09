@@ -3,7 +3,7 @@ layout: post
 title: Mongoose介绍、入门
 tags:
 - node
-categories: 前端
+categories: node
 description: Mongoose介绍
 ---
 
