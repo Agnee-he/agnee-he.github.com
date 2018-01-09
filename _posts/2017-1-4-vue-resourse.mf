@@ -1,0 +1,24 @@
+---
+layout: post
+title: vue-resourse
+tags:
+- vue
+categories: vue
+description: vue-resourse入门
+---
+
+<!-- more -->
+## vue-resource特点
+
+
+
+
+
+
+
+
+
+
+
+
+
