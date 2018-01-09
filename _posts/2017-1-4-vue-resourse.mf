@@ -4,21 +4,9 @@ title: vue-resourse
 tags:
 - vue
 categories: vue
-description: vue-resourse入门
+description: 访问页面前判断是否登录
 ---
 
 <!-- more -->
-## vue-resource特点
-
-
-
-
-
-
-
-
-
-
-
-
+### vue-resourse
 
