@@ -3,7 +3,7 @@ layout: post
 title: 移动端解决方案
 tags:
 - H5
-categories: 前端
+categories: H5
 description: 移动端字体单位font-size选择px还是rem
 ---
 
