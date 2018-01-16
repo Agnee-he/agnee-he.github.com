@@ -10,3 +10,10 @@ Thumbs.db
 .rvmrc
 
 *.lock
+.idea/agnee-he.github.com.iml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/vcs.xml
+*.xml
+.idea/vcs.xml
