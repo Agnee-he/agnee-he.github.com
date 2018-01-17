@@ -10,7 +10,7 @@ description: promise学习
 <!-- more -->
 之前在使用vue-resouse与axios的时候一直使用的是.then()、.catch(),但是不知道原来这就是promise，最近系统的学习了一遍，并记录下来。
 ### 语法
-```angular2html
+```
 new Promise( function(resolve, reject) {...} /* executor */  );
 ```
 executor是一个带有 resolve 和 reject 两个参数的函数 。executor 函数在Promise构造函数执行时同步执行，被传递 resolve 和 reject 函数（executor 函数在Promise构造函数返回新建对象前被调用）。resolve 和 reject 函数被调用时，分别将promise的状态改为fulfilled（完成）或rejected（失败）。executor 内部通常会执行一些异步操作，一旦完成，可以调用resolve函数来将promise状态改成fulfilled，或者在发生错误时将它的状态改为rejected。
@@ -26,13 +26,13 @@ Promise 对象是一个代理对象（代理一个值），被代理的值在Pro
  
  ### Promise.all()
  #### 语法
- ```angular2html
+ ```
 Promise.all(iterable);
 ```
 简单对的说，就是执行多个对象。当所有对象都resolve或者有一个被reject时，promise结束.
 #### 示例
 Promise.all 等待所有代码的完成（或第一个代码的失败）。
-```angular2html
+```
 let p1 = Promise.resolve(3);
 let p2 = 1337;
 let p3 = new Promise((resolve, reject) => {
@@ -45,7 +45,7 @@ Promise.all([p1, p2, p3]).then(values => {
 });
 ```
 如果iterable包含非promise值，则它们将被忽略，但仍然计入返回的promise数组值（如果promise已满足）：
-```angular2html
+```
 // this will be counted as if the iterable passed is empty, so it gets fulfilled
 var p = Promise.all([1,2,3]);
 // this will be counted as if the iterable passed contains only the resolved promise with value "444", so it gets fulfilled
@@ -67,7 +67,7 @@ setTimeout(function(){
 ```
 Promise.all()是异步的，只有当传递的对象为空时是同步的。<br>
 如果任意一个元素是rejected，那么Promise.all就是rejected。例如，如果你传递了五个参数，其中四个是经过一定时间间隔后执行resolve，另外一个立刻执行reject，那么Promise.all将会立刻执行reject。
-```angular2html
+```
 var p1 = new Promise((resolve, reject) => { 
   setTimeout(resolve, 1000, 'one'); 
 }); 
@@ -105,7 +105,7 @@ Promise.all([p1, p2, p3, p4, p5]).then(values => {
 ```
 ### Promise.prototype.catch()
 #### 语法
-```angular2html
+```
 p.catch(onRejected);
 
 p.catch(function(reason) {
@@ -118,7 +118,7 @@ p.catch(function(reason) {
 catch方法用来处理promise中出现的错误<br>
 
 捕获抛出的错误
-```angular2html
+```
 // 抛出一个错误，大多数时候将调用catch方法
 var p1 = new Promise(function(resolve, reject) {
   throw 'Uh-oh!';
@@ -150,7 +150,7 @@ p3.catch(function(e) {
 });
 ```
 如果已经决议（完成）
-```angular2html
+```
 //创建一个新的 Promise ，且已决议
 var p1 = Promise.resolve("calling next");
 
@@ -170,7 +170,7 @@ p2.then(function (value) {
 ```
 ### Promise.prototype.then()
 #### 语法
-```angular2html
+```
 p.then(onFulfilled, onRejected);
 
 p.then(function(value) {
@@ -181,7 +181,7 @@ p.then(function(value) {
 ```
 由于 then 和 Promise.prototype.catch() 方法都会返回 promise，它们可以被链式调用 — 一种称为复合（ composition） 的操作.
 #### 示例
-```angular2html
+```
 let p1 = new Promise(function(resolve, reject) {
   resolve("Success!");
   // or
